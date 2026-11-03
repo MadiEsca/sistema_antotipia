@@ -1,3 +1,4 @@
+// Criação dos tipos
 export type Category =
   | "Digital Art"
   | "Software History"
@@ -8,6 +9,7 @@ export type Category =
 
 export type SortOption = "recent" | "oldest" | "alphabetical" | "featured";
 
+// Criação das interfaces que serão utilizadas
 export interface Artifact {
   id: string;
   slug: string;

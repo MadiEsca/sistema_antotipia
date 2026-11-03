@@ -20,6 +20,7 @@ export default function AboutPage() {
         <div className="w-12 h-px bg-da-accent" aria-hidden="true" />
       </div>
 
+      {/* Implementar uma API para o envio das perguntas e das respostas, de forma que o next apenas a consuma */}
       {/* Content */}
       <div className="space-y-12 text-da-muted text-[15px] leading-relaxed">
         <Section label="I. The Problem of Digital Impermanence">

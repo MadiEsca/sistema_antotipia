@@ -1,5 +1,8 @@
 import type { Artifact } from "@/types";
 
+// Lista com todos os artifacts "chumbados dentro do código"
+// Vou implementar uma api em python para lidar com o envio desses artefatos, que no caso serão as mulheres da ciencia
+// É necessário editar o tipo Artifact
 export const artifacts: Artifact[] = [
   {
     id: "fragment-001",

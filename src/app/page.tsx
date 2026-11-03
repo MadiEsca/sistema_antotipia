@@ -41,27 +41,25 @@ export default function HomePage() {
           <div className="flex items-center gap-3 mb-8">
             <div className="w-6 h-px bg-da-accent" aria-hidden="true" />
             <span className="font-mono text-[10px] tracking-[0.4em] uppercase text-da-accent">
-              Dark Archive / Catalog v1.0
+              Antotipia
             </span>
           </div>
 
-          {/* Main heading */}
+          {/* Cabeçalho principal */}
           <h1
             className="text-[clamp(2.5rem,8vw,6.5rem)] font-serif font-bold leading-[0.9] tracking-tight text-da-text text-balance max-w-4xl mb-8"
-            style={{ animationName: "fadeUp", animationDuration: "0.8s", animationFillMode: "both" }}
-          >
-            An Archive of{" "}
-            <span className="italic text-da-muted">Digital</span>
+            style={{ animationName: "fadeUp", animationDuration: "0.8s", animationFillMode: "both" }}>
+            Um tributo a elas,{" "}
+            <span className="italic text-da-muted">mulheres</span>
             <br />
-            Obscurity.
+            na ciência
           </h1>
 
           {/* Subtitle and metadata row */}
           <div className="flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-16">
             <div className="max-w-md">
               <p className="text-da-muted text-base leading-relaxed">
-                Artifacts, experiments and fragments from the less explored
-                corners of digital culture — cataloged, preserved, examined.
+                Muitas coisas que temos hoje em dia são graças à mulheres ... [CONTINUAR]
               </p>
             </div>
 
