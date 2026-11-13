@@ -22,19 +22,18 @@ export default function NotFound() {
         {/* Message */}
         <div className="mt-4 mb-2">
           <div className="font-mono text-[10px] text-da-muted tracking-[0.4em] uppercase mb-3">
-            — Archive Error
+            — Critical Error
           </div>
           <h1 className="text-2xl font-serif font-bold text-da-text mb-3">
-            Artifact Not Found
+            PESSOA NÃO ENCONTRADA
           </h1>
           <p className="text-da-muted text-sm leading-relaxed">
-            The artifact you&rsquo;re looking for doesn&rsquo;t exist in this archive, has
-            been moved, or was never cataloged.
+            Vish... Parece que você está tentando acessar algo inexistente, tem certeza que era isso que estava procurando?
           </p>
         </div>
 
         {/* Terminal-style error message */}
-        <div className="my-8 bg-da-surface border border-da-border rounded-sm p-4 text-left">
+        {/*<div className="my-8 bg-da-surface border border-da-border rounded-sm p-4 text-left">
           <div className="font-mono text-[11px] space-y-1">
             <div className="text-da-muted">
               <span className="text-da-accent/60">ARCHIVE_SYS</span>
@@ -55,7 +54,7 @@ export default function NotFound() {
               <span className="text-da-muted/70">return to catalog index</span>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Actions */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -64,14 +63,14 @@ export default function NotFound() {
             className="inline-flex items-center gap-2 bg-da-accent text-da-bg font-mono text-xs tracking-widest uppercase font-bold px-5 py-2.5 rounded-sm hover:bg-da-accent/90 transition-colors"
           >
             <Archive size={14} aria-hidden="true" />
-            Archive Home
+            Página inicial
           </Link>
           <Link
             href="/explore"
             className="inline-flex items-center gap-2 font-mono text-xs tracking-widest uppercase text-da-muted hover:text-da-text border border-da-border hover:border-da-text/30 rounded-sm px-5 py-2.5 transition-all duration-200"
           >
             <ArrowLeft size={12} aria-hidden="true" />
-            Browse Catalog
+            Catálogo de pessoas
           </Link>
         </div>
       </div>

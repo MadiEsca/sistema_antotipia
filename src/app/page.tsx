@@ -7,9 +7,9 @@ import ArtifactCard from "@/components/gallery/ArtifactCard";
 import { ArrowRight, Archive } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "DARK ARCHIVE — Digital Artifact Gallery",
+  title: "Antotipia — Um tributo a elas",
   description:
-    "An experimental digital gallery cataloging artifacts, images, and fragments from the less explored corners of digital culture.",
+    "Esse é um projeto desenvolvido para a Feira de Ciências e Tecnologia do Sesi/Senai sig.",
 };
 
 export default function HomePage() {
@@ -45,7 +45,7 @@ export default function HomePage() {
             </span>
           </div>
 
-          {/* Cabeçalho principal */}
+          {/* Main header */}
           <h1
             className="text-[clamp(2.5rem,8vw,6.5rem)] font-serif font-bold leading-[0.9] tracking-tight text-da-text text-balance max-w-4xl mb-8"
             style={{ animationName: "fadeUp", animationDuration: "0.8s", animationFillMode: "both" }}>
@@ -59,7 +59,11 @@ export default function HomePage() {
           <div className="flex flex-col lg:flex-row lg:items-end gap-6 lg:gap-16">
             <div className="max-w-md">
               <p className="text-da-muted text-base leading-relaxed">
-                Muitas coisas que temos hoje em dia são graças à mulheres ... [CONTINUAR]
+                Muitas coisas que temos hoje em dia são graças à mulheres, e muitas das vezes 
+                não damos a elas seu devido valor. Estamos falando não apenas das mulheres 
+                famosas, ou das que fizeram grandes feitos na humanidade, estamos falando 
+                também de mães, tias, vós e irmãs que estão mudando e fazendo parte da vida 
+                de cada um de nós.
               </p>
             </div>
 
@@ -124,13 +128,13 @@ export default function HomePage() {
         <div className="flex items-center justify-between mb-10">
           <div>
             <div className="font-mono text-[10px] text-da-accent tracking-[0.4em] uppercase mb-2">
-              — Selected Works
+              — Imagens Selecionadas
             </div>
             <h2
               id="featured-heading"
               className="text-2xl font-serif font-bold text-da-text"
             >
-              Featured Artifacts
+              Mulheres de Destaque
             </h2>
           </div>
           <Link
@@ -160,13 +164,13 @@ export default function HomePage() {
         <div className="flex items-center justify-between mb-10">
           <div>
             <div className="font-mono text-[10px] text-da-muted tracking-[0.4em] uppercase mb-2">
-              — Catalog
+              — Catálogo
             </div>
             <h2
               id="recent-heading"
               className="text-2xl font-serif font-bold text-da-text"
             >
-              Recent Acquisitions
+              Adicionadas Recentemente
             </h2>
           </div>
           <Link

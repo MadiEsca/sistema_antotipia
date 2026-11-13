@@ -45,11 +45,11 @@ export default function ImageModal({ artifact }: ImageModalProps) {
       <button
         onClick={open}
         className="relative bg-da-surface border border-da-border rounded-sm aspect-[4/3] w-full overflow-hidden group focus-visible:outline-da-accent focus-visible:outline-2 focus-visible:outline-offset-4"
-        aria-label={`View larger image of ${artifact.title}`}
+        aria-label={`View larger image of ${artifact.name}`}
       >
         <ArtifactImage
           src={artifact.coverImage}
-          alt={artifact.title}
+          alt={artifact.name}
           artifactId={artifact.id}
           fill
         />
@@ -65,7 +65,7 @@ export default function ImageModal({ artifact }: ImageModalProps) {
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-da-bg/95 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
-          aria-label={`Image viewer for ${artifact.title}`}
+          aria-label={`Image viewer for ${artifact.name}`}
         >
           {/* Close button */}
           <button
@@ -100,7 +100,7 @@ export default function ImageModal({ artifact }: ImageModalProps) {
             <div className="relative w-full h-full">
               <ArtifactImage
                 src={artifact.coverImage}
-                alt={artifact.title}
+                alt={artifact.name}
                 artifactId={artifact.id}
                 fill={!zoom}
                 className={`cursor-${zoom ? "zoom-out" : "zoom-in"} ${zoom ? "max-w-none max-h-none" : "object-contain"}`}

@@ -4,7 +4,7 @@ import ExploreClient from "@/components/gallery/ExploreClient";
 export const metadata: Metadata = {
   title: "Explore",
   description:
-    "Browse and filter the complete DARK ARCHIVE catalog of digital artifacts, experiments, and fragments.",
+    "Busque e filtre pelas ciêntistas em nosso catálogo.",
 };
 
 export default function ExplorePage() {
@@ -13,14 +13,13 @@ export default function ExplorePage() {
       {/* Page header */}
       <div className="mb-10">
         <div className="font-mono text-[10px] text-da-accent tracking-[0.4em] uppercase mb-3">
-          — Archive Catalog
+          — Um tributo a Elas
         </div>
         <h1 className="text-3xl sm:text-4xl font-serif font-bold text-da-text mb-3">
           Explore
         </h1>
         <p className="text-da-muted text-sm leading-relaxed max-w-lg">
-          Browse the complete catalog. Filter by category, search by keyword, or
-          sort to navigate the archive.
+          Busque e filtre pelas ciêntistas em nosso catálogo, seja pelo seu nome, categoria ou palavra chave relacionada a ela.
         </p>
       </div>
 

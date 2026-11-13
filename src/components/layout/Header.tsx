@@ -7,10 +7,10 @@ import { Search, Menu, X } from "lucide-react";
 import { useSearch } from "@/lib/searchContext";
 
 const navLinks = [
-  { href: "/", label: "Gallery" },
+  { href: "/", label: "Galeria" },
   { href: "/explore", label: "Explore" },
-  { href: "/collections", label: "Collections" },
-  { href: "/about", label: "About" },
+  { href: "/collections", label: "Coleções" },
+  { href: "/about", label: "Sobre" },
 ];
 
 export default function Header() {
@@ -63,10 +63,10 @@ export default function Header() {
               aria-label="DARK ARCHIVE — Home"
             >
               <span className="text-da-text font-mono text-[11px] tracking-[0.25em] uppercase text-da-muted">
-                Archive System / v1.0
+                Antotipia
               </span>
               <span className="text-da-text font-mono text-sm font-bold tracking-[0.2em] uppercase">
-                DARK ARCHIVE
+                Um tributo a Elas
               </span>
             </Link>
 
@@ -166,7 +166,7 @@ export default function Header() {
             </Link>
           ))}
           <div className="mt-8 font-mono text-xs text-da-muted tracking-wider">
-            ARCHIVE SYSTEM / VERSION 1.0
+            Antotipia - Um tributo a Elas
           </div>
         </nav>
       </div>

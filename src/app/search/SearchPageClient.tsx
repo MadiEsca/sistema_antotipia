@@ -35,16 +35,16 @@ export default function SearchPageClient() {
             type="search"
             value={filters.query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search artifacts..."
+            placeholder="Busque pela pessoa..."
             className="flex-1 bg-transparent text-da-text placeholder-da-muted text-sm font-mono focus:outline-none"
-            aria-label="Search artifacts"
+            aria-label="Busque pela pessoa"
             autoFocus
           />
           {filters.query && (
             <button
               onClick={() => setQuery("")}
               className="text-da-muted hover:text-da-text transition-colors"
-              aria-label="Clear search"
+              aria-label="Limpar pesquisa"
             >
               <X size={14} aria-hidden="true" />
             </button>

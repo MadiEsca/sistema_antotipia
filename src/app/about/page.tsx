@@ -12,7 +12,7 @@ export default function AboutPage() {
       {/* Header */}
       <div className="mb-16">
         <div className="font-mono text-[10px] text-da-accent tracking-[0.4em] uppercase mb-4">
-          — Manifesto
+          — Sobre o Projeto
         </div>
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-da-text leading-tight mb-6">
           On the preservation of digital culture.

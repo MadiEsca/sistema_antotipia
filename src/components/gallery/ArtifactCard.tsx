@@ -25,13 +25,13 @@ export default function ArtifactCard({ artifact, priority }: ArtifactCardProps) 
       <Link
         href={`/artifact/${artifact.slug}`}
         className="block focus-visible:outline-da-accent focus-visible:outline-2 focus-visible:outline-offset-4 rounded-sm"
-        aria-label={`View ${artifact.title}`}
+        aria-label={`View ${artifact.name}`}
       >
         {/* Image container */}
         <div className="relative overflow-hidden bg-da-surface border border-da-border aspect-[4/3] rounded-sm">
           <ArtifactImage
             src={artifact.coverImage}
-            alt={artifact.title}
+            alt={artifact.name}
             artifactId={artifact.id}
             priority={priority}
           />
@@ -78,7 +78,7 @@ export default function ArtifactCard({ artifact, priority }: ArtifactCardProps) 
 
           {/* Title */}
           <h3 className="text-da-text text-sm font-medium group-hover:text-da-accent transition-colors duration-200 text-balance leading-snug">
-            {artifact.title}
+            {artifact.name}
           </h3>
 
           {/* Description */}

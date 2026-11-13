@@ -60,7 +60,7 @@ export default function CollectionsPage() {
                     >
                       <ArtifactImage
                         src={a.coverImage}
-                        alt={a.title}
+                        alt={a.name}
                         artifactId={a.id}
                       />
                     </div>

@@ -12,7 +12,7 @@ export default function LoadingState() {
           ))}
         </div>
         <span className="font-mono text-[10px] text-da-muted tracking-widest uppercase">
-          Loading Archive...
+          Carregando...
         </span>
       </div>
     </div>

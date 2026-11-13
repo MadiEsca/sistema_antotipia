@@ -1,19 +1,36 @@
 // Criação dos tipos
 export type Category =
-  | "Digital Art"
-  | "Software History"
-  | "Interfaces"
-  | "Experiments"
-  | "Photography"
-  | "Digital Culture";
+  | "Ciências e Tecnologia"
+  | "Ciências Biológicas e da Saúde"
+  | "Ciências Ambientais"
+  | "Direitos Humanos"
+  | "Artes";
 
-export type SortOption = "recent" | "oldest" | "alphabetical" | "featured";
+export type SortOption = "recentes" | "antigas" | "alfabetico" | "destaque";
+
+export type Scientists = 
+  | "Ada Lovelace"
+  | "Lise Meither" 
+  | "Barbara MacClintock"
+  | "Shien-Shiung Wu"
+  | "Doroty Hadkin"
+  | "Emmy Noether"
+  | "Tu Youyou"
+  | "Jaqueline Goes de Jesus"
+  | "Johanna Dobereiner"
+  | "Elisa Frota-Pessoa"
+  | "Katherine Johnson"
+  | "Malala Yousafzai"
+  | "Wangari Maathai"
+  | "Jane Goodall"
+  | "Frida Kahlo"
+  | "Marie Curie";
 
 // Criação das interfaces que serão utilizadas
 export interface Artifact {
   id: string;
   slug: string;
-  title: string;
+  name: Scientists;
   category: Category;
   year: number;
   description: string;

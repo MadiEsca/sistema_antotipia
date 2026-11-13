@@ -9,7 +9,7 @@ export function searchArtifacts(filters: SearchFilters): Artifact[] {
     const q = filters.query.trim().toLowerCase();
     results = results.filter(
       (a) =>
-        a.title.toLowerCase().includes(q) ||
+        a.name.toLowerCase().includes(q) ||
         a.description.toLowerCase().includes(q) ||
         a.category.toLowerCase().includes(q) ||
         a.tags.some((t) => t.toLowerCase().includes(q)) ||
@@ -36,13 +36,13 @@ export function sortArtifacts(
 ): Artifact[] {
   const sorted = [...items];
   switch (sort) {
-    case "recent":
+    case "recentes":
       return sorted.sort((a, b) => b.year - a.year);
-    case "oldest":
+    case "antigas":
       return sorted.sort((a, b) => a.year - b.year);
-    case "alphabetical":
-      return sorted.sort((a, b) => a.title.localeCompare(b.title));
-    case "featured":
+    case "alfabetico":
+      return sorted.sort((a, b) => a.name.localeCompare(b.name));
+    case "destaque":
       return sorted.sort((a, b) => {
         if (a.featured && !b.featured) return -1;
         if (!a.featured && b.featured) return 1;

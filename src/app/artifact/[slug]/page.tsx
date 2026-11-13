@@ -22,10 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const artifact = getArtifactBySlug(slug);
   if (!artifact) return { title: "Artifact Not Found" };
   return {
-    title: artifact.title,
+    title: artifact.name,
     description: artifact.description,
     openGraph: {
-      title: artifact.title,
+      title: artifact.name,
       description: artifact.description,
       type: "article",
     },
@@ -66,7 +66,7 @@ export default async function ArtifactPage({ params }: Props) {
         </Link>
         <span className="text-da-border font-mono text-[10px]">/</span>
         <span className="font-mono text-[10px] text-da-text uppercase tracking-widest truncate">
-          {artifact.title}
+          {artifact.name}
         </span>
       </nav>
 
@@ -91,7 +91,7 @@ export default async function ArtifactPage({ params }: Props) {
           </div>
 
           <h1 className="text-2xl sm:text-3xl font-serif font-bold text-da-text leading-tight">
-            {artifact.title}
+            {artifact.name}
           </h1>
 
           <div className="space-y-3">
@@ -131,7 +131,7 @@ export default async function ArtifactPage({ params }: Props) {
               <ArrowLeft size={14} className="text-da-muted group-hover:text-da-accent shrink-0 transition-colors" aria-hidden="true" />
               <div className="min-w-0">
                 <div className="font-mono text-[10px] text-da-muted uppercase tracking-widest mb-1">Previous</div>
-                <div className="text-sm text-da-text group-hover:text-da-accent transition-colors truncate">{prev.title}</div>
+                <div className="text-sm text-da-text group-hover:text-da-accent transition-colors truncate">{prev.name}</div>
               </div>
             </Link>
           ) : <div />}
@@ -139,7 +139,7 @@ export default async function ArtifactPage({ params }: Props) {
             <Link href={`/artifact/${next.slug}`} className="group flex items-center gap-3 text-right min-w-0">
               <div className="min-w-0">
                 <div className="font-mono text-[10px] text-da-muted uppercase tracking-widest mb-1">Next</div>
-                <div className="text-sm text-da-text group-hover:text-da-accent transition-colors truncate">{next.title}</div>
+                <div className="text-sm text-da-text group-hover:text-da-accent transition-colors truncate">{next.name}</div>
               </div>
               <ArrowRight size={14} className="text-da-muted group-hover:text-da-accent shrink-0 transition-colors" aria-hidden="true" />
             </Link>

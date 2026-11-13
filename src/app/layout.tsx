@@ -28,17 +28,17 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "DARK ARCHIVE — Digital Artifact Gallery",
+    default: "Antotipia — Um tributo a Elas",
     template: "%s — DARK ARCHIVE",
   },
   description:
-    "An experimental digital gallery dedicated to cataloging artifacts, images, and fragments from the less explored corners of digital culture.",
+    "Um site criados pelo grupo de Desenvolvimento Científico do Sesi/Senai SIG para apresentar um projeto relacionado a antotipia.",
   openGraph: {
     type: "website",
-    siteName: "DARK ARCHIVE",
-    title: "DARK ARCHIVE — Digital Artifact Gallery",
+    siteName: "Antotipia",
+    title: "Antotipia — Um tributo a Elas",
     description:
-      "An experimental digital gallery dedicated to cataloging artifacts, images, and fragments from the less explored corners of digital culture.",
+      "Um site criados pelo grupo de Desenvolvimento Científico do Sesi/Senai SIG para apresentar um projeto relacionado a antotipia.",
   },
   robots: { index: true, follow: true },
 };

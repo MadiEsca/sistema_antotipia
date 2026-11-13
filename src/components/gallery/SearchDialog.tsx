@@ -117,7 +117,7 @@ export default function SearchDialog() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-da-text text-sm font-medium truncate group-hover:text-da-accent transition-colors">
-                        {artifact.title}
+                        {artifact.name}
                       </div>
                       <div className="flex items-center gap-2 mt-0.5">
                         <span className="font-mono text-[10px] text-da-muted">
