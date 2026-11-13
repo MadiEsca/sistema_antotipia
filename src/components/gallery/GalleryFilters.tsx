@@ -5,19 +5,18 @@ import type { Category, SortOption } from "@/types";
 import { X, ChevronDown } from "lucide-react";
 
 const CATEGORIES: Category[] = [
-  "Digital Art",
-  "Software History",
-  "Interfaces",
-  "Experiments",
-  "Photography",
-  "Digital Culture",
+  "Ciências e Tecnologia",
+  "Ciências Biológicas e da Saúde",
+  "Ciências Ambientais",
+  "Direitos Humanos",
+  "Artes",
 ];
 
 const SORT_OPTIONS: { value: SortOption; label: string }[] = [
-  { value: "featured", label: "Featured" },
-  { value: "recent", label: "Recently Added" },
-  { value: "oldest", label: "Oldest First" },
-  { value: "alphabetical", label: "A–Z" },
+  { value: "destaque", label: "Em destaque" },
+  { value: "recente", label: "Adicionadas recentemente" },
+  { value: "antigas", label: "Mais antigas" },
+  { value: "alfabetico", label: "A–Z" },
 ];
 
 interface GalleryFiltersProps {
@@ -85,7 +84,7 @@ export default function GalleryFilters({
           <button
             onClick={onClear}
             className="flex items-center gap-1 text-[10px] font-mono text-da-muted hover:text-da-alert transition-colors"
-            aria-label="Clear all filters"
+            aria-label="Limpar todos os filtros"
           >
             <X size={10} aria-hidden="true" />
             Clear

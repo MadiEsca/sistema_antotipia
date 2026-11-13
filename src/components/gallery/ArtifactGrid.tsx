@@ -15,7 +15,7 @@ interface ArtifactGridProps {
 const defaultFilters: SearchFilters = {
   query: "",
   category: "",
-  sort: "featured",
+  sort: "destaque",
 };
 
 export default function ArtifactGrid({

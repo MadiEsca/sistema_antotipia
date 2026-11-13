@@ -16,7 +16,7 @@ export default function ExploreClient() {
   const hasActiveFilters =
     filters.query.trim() !== "" ||
     filters.category !== "" ||
-    filters.sort !== "featured";
+    filters.sort !== "destaque";
 
   return (
     <>

@@ -36,7 +36,7 @@ export function sortArtifacts(
 ): Artifact[] {
   const sorted = [...items];
   switch (sort) {
-    case "recentes":
+    case "recente":
       return sorted.sort((a, b) => b.year - a.year);
     case "antigas":
       return sorted.sort((a, b) => a.year - b.year);

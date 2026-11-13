@@ -14,7 +14,7 @@ interface SearchContextValue {
   closeSearch: () => void;
 }
 
-const defaults: SearchFilters = { query: "", category: "", sort: "featured" };
+const defaults: SearchFilters = { query: "", category: "", sort: "destaque" };
 
 const SearchContext = createContext<SearchContextValue | null>(null);
 

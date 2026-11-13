@@ -12,7 +12,7 @@ export const artifacts: Artifact[] = [
     year: 2023,
     description: "An experimental study in digital decay — layers of corrupted raster data examined as aesthetic material.",
     longDescription: "Fragment_001 emerged from a process of deliberate file corruption and reconstruction. The source images were subjected to iterative encoding failures, byte manipulations, and format conversions that introduced unpredictable visual artifacts. The resulting composition sits at the boundary between breakdown and beauty, examining what persists when digital systems fail.\n\nThe work challenges the assumption that data corruption is purely destructive. Instead, it reveals an emergent aesthetic — glitch as a language, noise as texture, failure as form.",
-    tags: ["pioneiraComputacao", "Programacao", "", "decay"],
+    tags: ["pioneiraComputacao", "Programacao", "mulheres", "decay"],
     coverImage: "/images/artifacts/fragment-001.svg",
     featured: true,
     collectionIds: ["digital-decay", "experimental-visions"],

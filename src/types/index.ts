@@ -6,7 +6,7 @@ export type Category =
   | "Direitos Humanos"
   | "Artes";
 
-export type SortOption = "recentes" | "antigas" | "alfabetico" | "destaque";
+export type SortOption = "recente" | "antigas" | "alfabetico" | "destaque";
 
 export type Scientists = 
   | "Ada Lovelace"
