@@ -72,6 +72,32 @@ export const collections: Collection[] = [
     ],
     year: 2024,
   },
+  {
+    id: "bastidores-do-experimento",
+    slug: "bastidores-do-experimento",
+    name: "Bastidores do Experimento",
+    description:
+      "Registros do passo a passo da antotipia em laboratório: a pesagem de amoras e cúrcuma, a extração dos pigmentos com água, álcool e etanol, a comparação entre os extratos e a aplicação da cor no papel. Imagens que mostram como frutas, temperos e luz do sol se transformam em material fotográfico.",
+    coverImage: "/images/artifacts/Papel_Tingido_Amora.jpeg",
+    artifactIds: [
+      "papel-tingido-amora",
+      "pesagem-da-curcuma",
+      "extratos-de-amora-tres-solventes",
+      "alcool-54-gl",
+      "etanol-combustivel",
+      "materiais-do-experimento",
+      "aplicacao-do-extrato-com-pincel",
+      "pesagem-das-amoras",
+      "comparacao-dos-extratos",
+      "medicao-do-alcool",
+      "alcool-70",
+      "extrato-de-curcuma",
+      "curcuma-em-po-nos-bequeres",
+      "materiais-e-solventes",
+      "preparando-a-pesagem-da-curcuma",
+  ],
+  year: 2026,
+},
 ];
 
 export function getCollectionBySlug(slug: string): Collection | undefined {
