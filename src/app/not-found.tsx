@@ -22,7 +22,7 @@ export default function NotFound() {
         {/* Message */}
         <div className="mt-4 mb-2">
           <div className="font-mono text-[10px] text-da-muted tracking-[0.4em] uppercase mb-3">
-            — Critical Error
+            — Erro Crítico
           </div>
           <h1 className="text-2xl font-serif font-bold text-da-text mb-3">
             PESSOA NÃO ENCONTRADA

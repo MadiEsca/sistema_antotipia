@@ -62,7 +62,7 @@ export default async function CollectionPage({ params }: Props) {
         <div className="lg:col-span-2 flex flex-col justify-between">
           <div>
             <div className="font-mono text-[10px] text-da-accent tracking-[0.4em] uppercase mb-3">
-              — Collection
+              — Coleção
             </div>
             <h1 className="text-3xl sm:text-4xl font-serif font-bold text-da-text mb-4">
               {collection.name}
@@ -77,10 +77,10 @@ export default async function CollectionPage({ params }: Props) {
                 {String(collectionArtifacts.length).padStart(2, "0")}
               </div>
               <div className="font-mono text-[10px] text-da-muted tracking-widest uppercase">
-                Artifacts
+                Cientistas
               </div>
             </div>
-            {collection.year && (
+            {/* {collection.year && (
               <div>
                 <div className="font-mono text-2xl font-bold text-da-text tabular-nums">
                   {collection.year}
@@ -89,13 +89,13 @@ export default async function CollectionPage({ params }: Props) {
                   Updated
                 </div>
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>
 
       {/* Artifacts grid */}
-      <h2 className="sr-only">Artifacts in this collection</h2>
+      <h2 className="sr-only">Cientistas</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {collectionArtifacts.map((artifact, i) => (
           <ArtifactCard key={artifact.id} artifact={artifact} priority={i < 3} />

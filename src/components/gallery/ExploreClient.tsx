@@ -28,7 +28,7 @@ export default function ExploreClient() {
             type="search"
             value={filters.query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search by name, category, tag, year..."
+            placeholder="Procure por Nome, Tags, Ano de Nascimento..."
             className="flex-1 bg-transparent text-da-text placeholder-da-muted text-sm font-mono focus:outline-none"
             aria-label="Search artifacts"
           />

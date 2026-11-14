@@ -62,7 +62,7 @@ export default function SearchDialog() {
               type="search"
               value={filters.query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search artifacts, categories, tags..."
+              placeholder="Busque por personagens, categorias, tags...."
               className="flex-1 bg-transparent text-da-text placeholder-da-muted text-sm font-mono focus:outline-none"
               aria-label="Search query"
             />
@@ -92,14 +92,14 @@ export default function SearchDialog() {
           {filters.query.trim() === "" ? (
             <div className="px-4 py-6 text-center">
               <p className="text-da-muted text-xs font-mono">
-                Type to search across {/* */}
-                <span className="text-da-text">18 artifacts</span>
+                Escreva para pesquisar uma personagem dentro de {/* */}
+                <span className="text-da-text">16 Personagens</span>
               </p>
             </div>
           ) : results.length === 0 ? (
             <div className="px-4 py-6 text-center">
               <p className="text-da-muted text-sm font-mono">
-                No artifacts found for &ldquo;{filters.query}&rdquo;
+                A personagem &ldquo;{filters.query}&rdquo; não foi encontrada
               </p>
             </div>
           ) : (

@@ -12,28 +12,27 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-da-muted mb-1">
-              Archive System / v1.0
+              Antotipia
             </div>
             <div className="font-mono text-base font-bold tracking-[0.25em] uppercase text-da-text mb-4">
-              DARK ARCHIVE
+              um tributo a Elas
             </div>
             <p className="text-da-muted text-sm leading-relaxed max-w-xs">
-              A digital archive exploring the fragments, aesthetics and memories
-              of digital culture.
+              Um catálogo em homenagem às mulheres que mudaram o mundo, reveladas pela luz.
             </p>
           </div>
 
           {/* Navigate */}
           <div>
             <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-da-muted mb-4">
-              Navigate
+              Navegue
             </div>
             <ul className="space-y-2">
               {[
-                { href: "/", label: "Gallery" },
+                { href: "/", label: "Galeria" },
                 { href: "/explore", label: "Explore" },
-                { href: "/collections", label: "Collections" },
-                { href: "/about", label: "About" },
+                { href: "/collections", label: "Coleções" },
+                { href: "/about", label: "Sobre nós" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -50,7 +49,7 @@ export default function Footer() {
           {/* Collections */}
           <div>
             <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-da-muted mb-4">
-              Collections
+              Coleções
             </div>
             <ul className="space-y-2">
               {collections.slice(0, 4).map((col) => (
@@ -70,14 +69,14 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-da-border pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <div className="font-mono text-xs text-da-muted tabular-nums">
-            © {year} DARK ARCHIVE
+            © {year} Antotipia
           </div>
           <div className="font-mono text-xs text-da-muted flex items-center gap-4">
             <span className="tabular-nums">
-              {artifacts.length} artifacts cataloged
+              {artifacts.length} cientistas catalogadas
             </span>
             <span className="text-da-border">|</span>
-            <span>DA-{String(year).slice(2)}-ARCHIVE</span>
+            <span>Sesi-{String(year)}-Feira de Ciências</span>
           </div>
         </div>
       </div>

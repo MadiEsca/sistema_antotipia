@@ -74,7 +74,7 @@ export default function HomePage() {
                   {String(artifacts.length).padStart(2, "0")}
                 </div>
                 <div className="font-mono text-[10px] text-da-muted tracking-widest uppercase mt-1">
-                  Artifacts
+                  Cientistas
                 </div>
               </div>
               <div>
@@ -82,7 +82,7 @@ export default function HomePage() {
                   06
                 </div>
                 <div className="font-mono text-[10px] text-da-muted tracking-widest uppercase mt-1">
-                  Categories
+                  Categorias
                 </div>
               </div>
               <div>
@@ -90,7 +90,7 @@ export default function HomePage() {
                   05
                 </div>
                 <div className="font-mono text-[10px] text-da-muted tracking-widest uppercase mt-1">
-                  Collections
+                  Coleções
                 </div>
               </div>
             </div>
@@ -103,14 +103,14 @@ export default function HomePage() {
               className="inline-flex items-center gap-3 bg-da-accent text-da-bg font-mono text-xs tracking-widest uppercase font-bold px-6 py-3 rounded-sm hover:bg-da-accent/90 transition-colors duration-200 focus-visible:outline-da-accent focus-visible:outline-2 focus-visible:outline-offset-4"
             >
               <Archive size={14} aria-hidden="true" />
-              Explore the Archive
+              Explore nosso acervo
               <ArrowRight size={14} aria-hidden="true" />
             </Link>
             <Link
               href="/collections"
               className="font-mono text-xs tracking-widest uppercase text-da-muted hover:text-da-text transition-colors duration-200 flex items-center gap-2"
             >
-              Collections
+              Coleções
               <ArrowRight size={12} aria-hidden="true" />
             </Link>
           </div>
@@ -141,7 +141,7 @@ export default function HomePage() {
             href="/explore"
             className="hidden sm:flex items-center gap-2 font-mono text-[10px] text-da-muted hover:text-da-text transition-colors uppercase tracking-widest"
           >
-            View All
+            Veja todas as cientistas
             <ArrowRight size={10} aria-hidden="true" />
           </Link>
         </div>
@@ -177,7 +177,7 @@ export default function HomePage() {
             href="/explore"
             className="hidden sm:flex items-center gap-2 font-mono text-[10px] text-da-muted hover:text-da-text transition-colors uppercase tracking-widest"
           >
-            Browse All
+            Ver tudo
             <ArrowRight size={10} aria-hidden="true" />
           </Link>
         </div>
@@ -189,14 +189,14 @@ export default function HomePage() {
             href="/explore"
             className="inline-flex items-center gap-2 font-mono text-xs text-da-muted hover:text-da-text border border-da-border hover:border-da-text/30 rounded-sm px-6 py-3 transition-all duration-200 tracking-widest uppercase"
           >
-            View All {artifacts.length} Artifacts
+            Explore todas as {artifacts.length} Cientistas
             <ArrowRight size={12} aria-hidden="true" />
           </Link>
         </div>
       </section>
 
       {/* Manifesto strip */}
-      <section className="border-t border-da-border bg-da-surface/30" aria-labelledby="manifesto-teaser">
+      { /* <section className="border-t border-da-border bg-da-surface/30" aria-labelledby="manifesto-teaser">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="max-w-lg">
             <div className="font-mono text-[10px] text-da-muted tracking-[0.4em] uppercase mb-3">
@@ -222,7 +222,7 @@ export default function HomePage() {
             <ArrowRight size={12} aria-hidden="true" />
           </Link>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }

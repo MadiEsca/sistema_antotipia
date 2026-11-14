@@ -58,7 +58,7 @@ export default async function ArtifactPage({ params }: Props) {
       {/* Breadcrumb */}
       <nav aria-label="Breadcrumb" className="flex items-center gap-2 mb-8 flex-wrap">
         <Link href="/" className="font-mono text-[10px] text-da-muted hover:text-da-text transition-colors uppercase tracking-widest">
-          Archive
+          Cientista
         </Link>
         <span className="text-da-border font-mono text-[10px]">/</span>
         <Link href="/explore" className="font-mono text-[10px] text-da-muted hover:text-da-text transition-colors uppercase tracking-widest">
@@ -109,11 +109,11 @@ export default async function ArtifactPage({ params }: Props) {
           </div>
 
           <div className="border border-da-border rounded-sm divide-y divide-da-border bg-da-surface/30">
-            <MetaRow label="Category" value={artifact.category} />
-            <MetaRow label="Year" value={String(artifact.year)} />
-            {artifact.medium && <MetaRow label="Medium" value={artifact.medium} />}
-            {artifact.dimensions && <MetaRow label="Dimensions" value={artifact.dimensions} />}
-            <MetaRow label="Identifier" value={artifact.id.toUpperCase()} mono />
+            <MetaRow label="Categoria" value={artifact.category} />
+            <MetaRow label="Nascimento" value={String(artifact.year)} />
+            {artifact.medium && <MetaRow label="Resumo" value={artifact.medium} />}
+            {/*{artifact.dimensions && <MetaRow label="Dimensions" value={artifact.dimensions} />} */}
+            <MetaRow label="Identificador" value={artifact.id.toUpperCase()} mono />
           </div>
 
           <Link href="/explore" className="inline-flex items-center gap-2 font-mono text-[10px] text-da-muted hover:text-da-text transition-colors uppercase tracking-widest">

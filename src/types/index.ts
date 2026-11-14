@@ -10,10 +10,10 @@ export type SortOption = "recente" | "antigas" | "alfabetico" | "destaque";
 
 export type Scientists = 
   | "Ada Lovelace"
-  | "Lise Meither" 
-  | "Barbara MacClintock"
-  | "Shien-Shiung Wu"
-  | "Doroty Hadkin"
+  | "Lise Meitner" 
+  | "Barbara McClintock"
+  | "Chien-Shiung Wu"
+  | "Dorothy Hodgkin"
   | "Emmy Noether"
   | "Tu Youyou"
   | "Jaqueline Goes de Jesus"
@@ -39,7 +39,12 @@ export interface Artifact {
   coverImage: string;
   featured: boolean;
   collectionIds?: string[];
-  status?: "available" | "restricted" | "archived";
+  status?:
+    | "Ciências e Tecnologia"
+    | "Ciências Biológicas e da Saúde"
+    | "Ciências Ambientais"
+    | "Direitos Humanos"
+    | "Artes";
   dimensions?: string;
   medium?: string;
 }

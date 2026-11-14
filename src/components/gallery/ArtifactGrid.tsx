@@ -31,8 +31,8 @@ export default function ArtifactGrid({
   if (results.length === 0) {
     return (
       <EmptyState
-        title="No artifacts found"
-        description="Try adjusting your filters or search query."
+        title="Nenhuma Imagem encontrada"
+        description="Tente fazer uma nova busca."
       />
     );
   }

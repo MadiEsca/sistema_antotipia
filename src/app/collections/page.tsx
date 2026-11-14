@@ -17,14 +17,13 @@ export default function CollectionsPage() {
       {/* Header */}
       <div className="mb-12">
         <div className="font-mono text-[10px] text-da-accent tracking-[0.4em] uppercase mb-3">
-          — Thematic Groups
+          — Grupos de Cientistas
         </div>
         <h1 className="text-3xl sm:text-4xl font-serif font-bold text-da-text mb-3">
-          Collections
+          Coleções
         </h1>
         <p className="text-da-muted text-sm leading-relaxed max-w-lg">
-          The archive is organized into thematic collections — groupings of
-          artifacts that share aesthetic, historical, or conceptual threads.
+          Nessa página agrupamos cada cientista por sua área de atuação.
         </p>
       </div>
 
