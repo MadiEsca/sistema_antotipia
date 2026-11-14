@@ -151,8 +151,8 @@ export default async function ArtifactPage({ params }: Props) {
       {related.length > 0 && (
         <section className="mt-16 pt-12 border-t border-da-border" aria-labelledby="related-heading">
           <div className="mb-8">
-            <div className="font-mono text-[10px] text-da-muted tracking-[0.4em] uppercase mb-2">— Related Works</div>
-            <h2 id="related-heading" className="text-xl font-serif font-bold text-da-text">You might also explore</h2>
+            <div className="font-mono text-[10px] text-da-muted tracking-[0.4em] uppercase mb-2">— Cientistas relacionadas</div>
+            <h2 id="related-heading" className="text-xl font-serif font-bold text-da-text">Que tal conhecer essas outras cientistas</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {related.map((a) => (
