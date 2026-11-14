@@ -4,13 +4,20 @@ export type Category =
   | "Ciências Biológicas e da Saúde"
   | "Ciências Ambientais"
   | "Direitos Humanos"
-  | "Artes";
+  | "Artes"
+  | "Processo Experimental";
 
 export type SortOption = "recente" | "antigas" | "alfabetico" | "destaque";
 
 export type Scientists = 
+  | "Ciências e Tecnologia"
+  | "Ciências Biológicas e da Saúde"
+  | "Ciências Ambientais"
+  | "Direitos Humanos"
+  | "Artes"
+  | "Processo Experimental"
   | "Ada Lovelace"
-  | "Lise Meitner" 
+  | "Lise Meitner"
   | "Barbara McClintock"
   | "Chien-Shiung Wu"
   | "Dorothy Hodgkin"
@@ -24,7 +31,22 @@ export type Scientists =
   | "Wangari Maathai"
   | "Jane Goodall"
   | "Frida Kahlo"
-  | "Marie Curie";
+  | "Marie Curie"
+  | "Papel Tingido com Extrato de Amora"
+  | "Pesagem da Cúrcuma"
+  | "Extratos de Amora em Três Solventes"
+  | "Álcool 54° GL"
+  | "Etanol Combustível"
+  | "Materiais do Experimento"
+  | "Aplicação do Extrato com Pincel"
+  | "Pesagem das Amoras"
+  | "Comparação dos Extratos"
+  | "Medição do Álcool"
+  | "Álcool 70%"
+  | "Extrato de Cúrcuma"
+  | "Cúrcuma em Pó nos Béqueres"
+  | "Materiais e Solventes"
+  | "Preparando a Pesagem da Cúrcuma";
 
 // Criação das interfaces que serão utilizadas
 export interface Artifact {
@@ -44,7 +66,8 @@ export interface Artifact {
     | "Ciências Biológicas e da Saúde"
     | "Ciências Ambientais"
     | "Direitos Humanos"
-    | "Artes";
+    | "Artes"
+    | "Processo Experimental";
   dimensions?: string;
   medium?: string;
 }
